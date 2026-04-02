@@ -7,10 +7,8 @@ nav_order: 0
 <!-- please do not alter the next line -->
 {% include mdi-project-overview.md %}  
 
-
-These pages describe the MDI project overall.
-Links within lead you to documentation for 
-specific components, e.g., how to get started
+These pages describe the MDI project overall. Links within lead you 
+to documentation for specific components, e.g., how to get started
 [writing your own tool suites]({{ "/docs/project-structure/#tool-suites" | relative_url }}).
 
 ### Screenshots
@@ -38,11 +36,12 @@ specific components, e.g., how to get started
 
 ### Quick Start
 
-Follow these instructions to clone and install the MDI **command line interface** on an HPC server:
+Many times you will start using the MDI by installing a tool suite that uses it. Otherwise,
+follow these instructions to clone and install the MDI **command line interface** on an HPC server:
 
 - [Install the MDI CLI on an HPC server](/mdi/docs/installation)
 
-Install the **MDI Desktop**, a program that helps you connect to a server and run MDI apps from your Windows or Mac computer:
+Install the **MDI Desktop**, a program that connects to a server to run MDI apps from your Windows or Mac computer:
 
 - [Install the MDI Desktop on your PC](/mdi-desktop-app/docs/installation)
 
@@ -56,6 +55,7 @@ the structure of job, pipeline, and app **configuration files**:
 
 - [Barebones anatomy of configuration files](/docs/barebones)
 
+<!-- 
 ### Live App Demo
 
 To try out 
@@ -64,7 +64,8 @@ To try out
 
 - go to: <https://mdi-demo.wilsonte-umich.io/>
 - enter the access key: <code>mdi-demo</code>
-- click <code>Load from Server</code> and select a data package or bookmark to load
+- click <code>Load from Server</code> and select a data package or bookmark to load 
+-->
 
 ### Guiding Principles
 
@@ -76,23 +77,21 @@ To try out
 - maximum developer flexibility
 
 Our goal is to help you develop and share robust
-data analysis tools more easily, or to use tools developed by others,
-without forcing too many requirements into the process. 
+data analysis tools, or to use tools developed by others,
+without placing too many requirements on the process. 
 
 ### Basic Training for Developers
 
 Please see our 
 [Basic Training](https://midataint.github.io/mdi-basic-training) tutorials 
-in the link below if you need help getting started with Git, the command line, job schedulers, 
-R, Shiny, etc.
+in the link below if you need help getting started with Git, the command line, 
+job schedulers, R, Shiny, etc.
 
 ### Portability and Licensing
 
-The MDI can 
-be used by any laboratory or organization for any data analysis need
-under the MIT license. A few instructions 
-are specific to the University of Michigan environment but the codebase
-is generic.
+The MDI can be used by any laboratory or organization for any data analysis 
+needs under the MIT license. A few instructions are specific to the 
+University of Michigan environment but the codebase is generic.
 
 <!-- please do not alter the next line -->
 {% include mdi-project-documentation.md %}

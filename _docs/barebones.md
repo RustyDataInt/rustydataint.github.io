@@ -1,19 +1,18 @@
 ---
-title: Config File Structure
+title: Config File Structures
 has_children: false
-nav_order: 45
+nav_order: 50
 ---
 
-{% include table-of-contents.md %}
+## Config File Structures
 
-Many MDI tasks
-are accomplished by writing YML format configuration files.
-This page summarizes their barebones structure for quick reference. 
-Extended documentation is provided elsewhere.
+Many MDI tasks are accomplished by writing YAML format configuration files.
+This page summarizes their barebones structures for quick reference. 
+Extended documentation is provided in the respective repositories.
 - In "minimal examples", only required entries are shown with example values.
-- In "complete structures", all possible entries are shown, not all are required.
+- In "complete structures", all possible entries are shown.
 - Items in square brackets [] list allowed values.
-- Items in angled brackets \<\> must be replaced with the actual name of something.
+- Items in angled brackets \<\> must be replaced with a value.
 - Similar names in different places refer to the same type of thing, e.g., a pipeline.
 - Job file templates are available by calling `mdi <pipelineName> template`.
 - Tool templates are available in the [mdi-suite-template](/mdi-suite-template/overview).
@@ -22,7 +21,7 @@ Extended documentation is provided elsewhere.
 
 As described in detail
 [here](/mdi/docs/job_config_files.html),
-end users write a job file, a.k.a. a data script,
+end users write a job file, a.k.a. data script,
 to declare the inputs, options, and output paths for their specific 
 work to be done by a pipeline. Pipelines can 
 be called with all options defined on the command line, 
@@ -101,8 +100,8 @@ execute: # actions to execute when this job file is called
 ## Stage 1 pipeline configuration files
 
 As described in detail
-[here](/mdi-suite-template/docs/pipelines/pipeline_yml.html), a pipeline's stucture - including
-it's actions, options, and program dependencies - 
+[here](/mdi-suite-template/docs/pipelines/pipeline_yml.html), 
+a pipeline's stucture - including it's actions, options, and program dependencies - 
 are defined by developers in file 'pipeline.yml'. 
 
 ### Minimal example
@@ -211,8 +210,8 @@ container: # support for singularity containers via a registry
 ## Stage 2 app configuration files
 
 As described in detail
-[here](/mdi-suite-template/shiny/apps/README.html), an app's top-level stucture - including
-it's data inputs and app step modules - 
+[here](/mdi-suite-template/shiny/apps/README.html), 
+an app's top-level stucture - including it's data inputs and app step modules - 
 are defined by developers in file 'config.yml'.
 
 ### Minimal example
@@ -261,7 +260,7 @@ appSteps:
 
 ## Stage 2 appStep module configuration files
 
-An app step module is defined by its ui.R and server.R scripts
+An app step module is defined by its 'ui.R' and 'server.R' scripts
 and in config file 'module.yml'.
 
 ### Minimal example
