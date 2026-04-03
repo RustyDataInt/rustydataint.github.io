@@ -4,7 +4,7 @@ has_children: false
 nav_order: 60
 ---
 
-{{page.title}}
+## {{page.title}}
 
 The MDI is an open-source project, whereas tool suites are maintained by third-party providers
 outside of our control. Regardless, MDI developers and code repositories are expected to adhere to
