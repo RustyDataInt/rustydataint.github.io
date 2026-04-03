@@ -16,9 +16,9 @@ All but the public server mode are best installed, managed, and used via the MDI
 - repository: <https://github.com/MiDataInt/mdi-desktop-app>
 - documentation: <{{ "/mdi-desktop-app" | absolute_url }}>
 
-Installing an apps server entails building two R package libraries in your
+Installing an apps server entails building R package libraries in your
 MDI installation, unless both a remote HPC server and your tool suite
-support Stage 2 Apps Singularity containers.
+support Stage 2 Apps Singularity containers that carry the required libraries.
 
 ### Local mode
 
@@ -41,13 +41,13 @@ to install and run the apps server on your local computer.
 
 You can also run an apps server
 on a remote HPC server, or one of its nodes, with a connection 
-over a secure, SSH port tunnel. The advantage of this mode is that 
+over a secure SSH port tunnel. The advantage of this mode is that 
 your apps have ready access to the same disk drives as your pipelines.
 
 {% include figure.html file="server-modes/remote.png" %}  
 {% include figure.html file="server-modes/node.png" %}
 
-If your tool suite supports contains and the remote server has 
+If your tool suite supports containers and the remote server has 
 Singularity available, no futher installation is needed. Just point
 the MDI Desktop at the correct path on your remote server.
 
@@ -59,7 +59,7 @@ mdi install --help
 mdi install --packages -n-cpu 4
 ```
 
-Alternatively, there is an `Install` button in the MDI Desktop you
+Alternatively, there is a `(Re)Install` button in the MDI Desktop you
 can use to complete the apps server installation.
 
 ### Public server mode

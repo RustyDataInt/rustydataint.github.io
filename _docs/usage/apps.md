@@ -17,8 +17,8 @@ Alternatively, you may be instructed to point your web browser at a
 created by your developer or system administrator.
 
 Once you have opened the MDI apps interface in the Desktop or a web browser, 
-load a data package into it that was created by an appropriate Stage 1 Pipeline, 
-which ends in **mdi.package.zip**. 
+load a data package into it that was created by an appropriate Stage 1 Pipeline. 
+Data package files end in **mdi.package.zip**. 
 
 Every app will be different, but here are a few common usage patterns.
 

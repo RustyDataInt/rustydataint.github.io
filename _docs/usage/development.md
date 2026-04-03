@@ -9,7 +9,7 @@ nav_order: 30
 
 You should always start a new tool suite by copying the MDI tool suite template.
 
-The following links provide detailed descriptions of how to use the template 
+These links provide detailed descriptions of how to use the template 
 and support frameworks to quickly create your own tools:
 
 - <{{ "/mdi-suite-template" | absolute_url  }}>
@@ -26,7 +26,7 @@ The MDI encourages 'fork-and-pull' code development, wherein you
 - make a pull request to the definitive repositories
 
 Most users will only fork their own or their group's repositories,
-but you are welcome to fork the public MDI frameworks as well if you
+but you are welcome to fork the MDI frameworks if you
 would like to contribute to the MDI codebase.
 
 Forking is not strictly necessary for repos you own, i.e.,
@@ -48,7 +48,7 @@ to request a similar developer mode for a running apps server.
 
 You can develop and use a private GitHub tool suite repository if you provide a 
 [GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
-(PAT) in a file with user-only permissions as follows:
+(PAT) in a file in your home directory with user-only permissions as follows:
 
 ```R
 # ~/gitCredentials.R

@@ -5,7 +5,7 @@ has_children: false
 nav_order: 10
 ---
 
-## Stage 1 Pipeline installation
+## Stage 1 Pipelines installation
 
 All MDI tool suites can be deployed in one of two modes,
 either as a single-suite or a multi-suite installation.
@@ -17,7 +17,7 @@ Once the CLI is installed, you may need to then build one or more pipeline
 if either your HPC server or a tool suite does not offer
 Singularity/Apptainer support.
 
-Note that Stage 1 Pipeline installation only applies
+Note that Stage 1 Pipelines installation only applies
 to a Linux HPC server with bash shell support.
 
 ### Single-suite installation
@@ -78,7 +78,7 @@ will be downloaded and used automatically.
 
 If you need to run a command on your server to make the 
 `singularity` command available (other than `module load singularity`,
-which will be checked automatically), communicate that command to your
+which is tried automatically), communicate that command to your
 MDI installation by editing file '.../mdi/config/singularity.yml'.
 
 ### Build the environments locally
@@ -95,10 +95,24 @@ mdi my_pipeline conda --create
 ## Install your developer-forks locally
 
 The MDI encourages 'fork-and-pull' code development, wherein you 
-fork repositories you need to edit to create "developer-forks".
+fork repositories on GitHub to edit as "developer-forks".
 
-To can easily install your developer forks locally in parallel 
-to the definitive repositories using CLI command options:
+To install your forks, you must provide your GitHub user information
+in the following file in your home directory, where a 
+[Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+provided as `GITHUB_PAT` is only required if your tool suite repo is private. 
+
+```R
+# ~/gitCredentials.R
+gitCredentials <- list(
+    USER_NAME  = "First Name",
+    USER_EMAIL = "namef@umich.edu",
+    GIT_USER   = "xxx", # required to pull forks
+    GITHUB_PAT = "xxx"
+)
+```
+
+Then, install your forks locally using CLI command options:
 
 ```bash
 # <mdi_alias_name> install --forks

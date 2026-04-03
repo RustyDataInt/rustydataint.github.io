@@ -9,7 +9,7 @@ nav_order: 10
 
 You run MDI data analysis pipelines using the 
 [MDI command line interface]({{ "/mdi" | absolute_url }})
-you installed in the previous section.
+that you installed in the previous section.
 Its usage is described in detail in the link above, including 
 how to write effective job files. 
 
